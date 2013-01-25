@@ -1,0 +1,8 @@
+/bin
+/gen
+/.classpath
+/.project
+/.idea
+/*.iml
+/project.properties
+/.settings
