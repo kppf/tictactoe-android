@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.game.tictactoe"
+    package="com.tictactoe"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -14,12 +14,34 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.game.tictactoe.GameIndex"
+            android:name="com.tictactoe.GameIndex"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.tictactoe.NewGame"
+            android:label="@string/app_name"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.thesportingapp.NEWGAME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.tictactoe.Credits"
+            android:label="@string/app_name"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.thesportingapp.CREDITS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>

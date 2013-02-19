@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,33 +8,33 @@
     tools:context=".MainActivity" >
 
     <Button
-        android:id="@+id/newGame"
+        android:id="@+id/localGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="80dp"
-        android:text="@string/newGame" />
+        android:text="@string/localGame" />
 
     <Button
-        android:id="@+id/exit"
+        android:id="@+id/foreignGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/newGame"
+        android:layout_below="@id/localGame"
         android:layout_marginTop="80dp"
-        android:text="@string/exit" />
+        android:text="@string/foreignGame" />
 
     <Button
-        android:id="@+id/credits"
+        android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/exit"
+        android:layout_below="@id/foreignGame"
         android:layout_marginTop="80dp"
-        android:text="@string/credits" />
+        android:text="@string/back" />
 
 </RelativeLayout>
