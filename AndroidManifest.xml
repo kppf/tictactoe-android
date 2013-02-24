@@ -28,7 +28,7 @@
             android:label="@string/app_name"
             android:exported="false" >
             <intent-filter>
-                <action android:name="com.thesportingapp.NEWGAME" />
+                <action android:name="com.tictactoe.NEWGAME" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -39,7 +39,19 @@
             android:label="@string/app_name"
             android:exported="false" >
             <intent-filter>
-                <action android:name="com.thesportingapp.CREDITS" />
+                <action android:name="com.tictactoe.CREDITS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="com.tictactoe.LocalHome"
+            android:label="@string/app_name"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.tictactoe.LOCALHOME" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

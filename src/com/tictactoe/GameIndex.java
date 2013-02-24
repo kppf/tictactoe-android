@@ -24,7 +24,7 @@ public class GameIndex extends Activity {
 			@Override
 			public void onClick(View vNewGame) {
 				// TODO Auto-generated method stub
-				Intent i = new Intent("com.thesportingapp.NEW");
+				Intent i = new Intent("com.tictactoe.NEWGAME");
 				startActivity(i);
 			}
 		});
@@ -34,8 +34,7 @@ public class GameIndex extends Activity {
 			@Override
 			public void onClick(View vExit) {
 				// TODO Auto-generated method stub
-				Intent i = new Intent("com.thesportingapp.EXIT");
-				startActivity(i);
+
 			}
 		});
 
@@ -44,7 +43,7 @@ public class GameIndex extends Activity {
 			@Override
 			public void onClick(View vCredits) {
 				// TODO Auto-generated method stub
-				Intent i = new Intent("com.thesportingapp.CREDITS");
+				Intent i = new Intent("com.tictactoe.CREDITS");
 				startActivity(i);
 			}
 		});
