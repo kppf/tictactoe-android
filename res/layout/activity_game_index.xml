@@ -14,6 +14,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="80dp"
+        android:background="@drawable/bluebutton"
         android:text="@string/newGame" />
 
     <Button
@@ -24,6 +25,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/newGame"
         android:layout_marginTop="80dp"
+        android:background="@drawable/redbg"
         android:text="@string/exit" />
 
     <Button
@@ -34,6 +36,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/exit"
         android:layout_marginTop="80dp"
+        android:background="@drawable/bluebutton"
         android:text="@string/credits" />
 
 </RelativeLayout>

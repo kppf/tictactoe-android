@@ -15,6 +15,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="80dp"
+        android:background="@drawable/bluebutton"
         android:text="@string/localGame" />
 
     <Button
@@ -25,6 +26,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/localGame"
         android:layout_marginTop="80dp"
+        android:background="@drawable/yellowbutton"
         android:text="@string/foreignGame" />
 
     <Button
@@ -35,6 +37,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/foreignGame"
         android:layout_marginTop="80dp"
+        android:background="@drawable/redbg"
         android:text="@string/back" />
 
 </RelativeLayout>
