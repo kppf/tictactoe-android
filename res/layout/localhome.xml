@@ -5,9 +5,27 @@
     android:orientation="vertical" 
     android:background="@drawable/radialbg"
     >
-    <com.tictactoe.LocalHomeCanvas 
-    	android:id="@+id/localHomeCanvas"
-    	android:layout_width="fill_parent"
-    	android:layout_height="fill_parent"
-    />
+<TextView  
+	    android:id="@+id/the_label"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:gravity="center" 
+	    android:textSize="20sp"
+	    android:layout_marginBottom="10dip"
+	    android:text="Player 1"/>
+	<Button
+		android:id="@+id/the_button"
+		android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:gravity="center" 
+	    android:layout_marginBottom="10dip"
+	    android:text="Restart"/>
+	
+    <com.tictactoe.LocalHomeCanvas
+        android:id="@+id/localHomeCanvas"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
 </LinearLayout>
