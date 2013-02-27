@@ -8,6 +8,8 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -52,6 +54,17 @@
             android:exported="false" >
             <intent-filter>
                 <action android:name="com.tictactoe.LOCALHOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.tictactoe.ForeignHome"
+            android:label="@string/app_name"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.tictactoe.FOREIGNHOME" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

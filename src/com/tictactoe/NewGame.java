@@ -34,6 +34,17 @@ public class NewGame extends Activity{
 			
 		});
 		
+		foreignGame.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent("com.tictactoe.FOREIGNHOME");
+				startActivity(intent);
+			}
+			
+		});
+		
 		back.setOnClickListener(new OnClickListener() {
 
 			@Override

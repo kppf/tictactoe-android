@@ -10,5 +10,7 @@
     <string name="localGame">Local Game</string>
     <string name="foreignGame">Foreign Game</string>
     <string name="back">Back</string>
+    <string name="searchNew">Search For Devices</string>
+    <string name="pairedDevices">Paired Devices</string>
 
 </resources>

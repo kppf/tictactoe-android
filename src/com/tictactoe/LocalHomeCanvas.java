@@ -43,8 +43,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 
 public class LocalHomeCanvas extends View {
 	private Bitmap kBitmap = null, cross=null, round=null;
@@ -66,6 +64,10 @@ public class LocalHomeCanvas extends View {
 		kBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.mainboard);
 		cross = BitmapFactory.decodeResource(getResources(), R.drawable.cross);
 		round = BitmapFactory.decodeResource(getResources(), R.drawable.round);
+		MBH = kBitmap.getHeight(); MBW = kBitmap.getWidth();
+		CH = cross.getHeight(); CW = cross.getWidth();
+		RH = round.getHeight(); RW = round.getWidth();
+		System.out.println("KPKP"+MBH+MBW+CH+CW+RH+RW);
 		mat = new int[3][3];
 		for(int i=0; i<3; i++) for(int j=0; j<3; j++) mat[i][j]=0;
 		player=RI;
@@ -79,7 +81,7 @@ public class LocalHomeCanvas extends View {
 		kPaint.setColor(Color.RED);
 		System.out.println(MAXX+" "+MAXY);
 		canvas.drawBitmap(kBitmap, MARX, MARY, kPaint);
-		System.out.println("Yo!");
+		System.out.println("Yo!"+kBitmap.getScaledHeight(canvas)+" "+kBitmap.getScaledHeight(240)+" "+kBitmap.getScaledHeight(320)+" "+kBitmap.getScaledHeight(160));
 		for(int i=0; i<3; i++) for(int j=0; j<3; j++) {
 			if(mat[i][j]==CI) canvas.drawBitmap(cross,MARX+(2*i+1)*MBW/6-CW/2,MARY+(2*j+1)*MBH/6-CH/2,kPaint);
 			else if(mat[i][j]==RI) canvas.drawBitmap(round,MARX+(2*i+1)*MBW/6-RW/2,MARY+(2*j+1)*MBH/6-RH/2,kPaint);
